@@ -1,0 +1,313 @@
+@charset "UTF-8"
+
+body{ font-family: 'pretendard', "맑은 고딕", sans-serif;}
+.inner { width: 1450px; margin: auto; padding: 0 4vw; }
+
+/*header*/
+.top_menu_box{ height: 66px; }
+header{ height: 80px;}
+
+.top_menu_box .inner, header .inner{ 
+height: 100%;
+display: flex; justify-content: space-between; align-items: center; }
+.top_menu_box .inner{ align-items: flex-end;}
+
+
+.top_menu{ }
+.top_menu ul{ }
+.top_menu li{ display: inline-block; font-size: 14px; color: #111; margin-left: 24px;}
+.top_menu a{}
+
+nav { }
+nav > ul { }
+nav > ul >li { display: inline-block; margin-right: 37px;}
+nav > ul >li > a{ font-size: 14px; font-weight: 700;  
+display: block; line-height: 75px; }
+
+nav > ul >li:nth-child(n+7) > a { font-weight: 300;}
+nav > ul >li > a:after{ width: 0%; height: 2px; background: #111;
+display: block; content: ""; transition: 0.3s;}
+nav > ul >li > a:hover:after { width: 100%;}
+
+
+.search {}
+.search_in{ background:#f4f4f4;
+width:317px; height:35px; padding:0 15px;
+display: flex; justify-content: space-between; align-items: center;}
+.search input { width: 250px; font-size: 16px; background: transparent; border: 0; outline: none;}
+.search img { width: 17px; height: 17px;  }
+
+
+
+/* visual*/
+#visual{ 
+height: calc(100vh - 146px); min-width: 1450px;}
+#visual img{ width: 100%; height: 100%; object-fit: cover; }
+
+
+/*section*/
+section{  margin: 120px auto 0;  }
+.tit_box{ text-align: center; margin-bottom: 45px;  }
+.tit_box .tit { }
+.tit_box span {  font-size: 22px; display: block; padding-bottom: 12px; color: #202020; letter-spacing: -0.7px;}
+.tit_box strong { color: #111;  letter-spacing: -0.7px; font-size: 36px; }
+.best_item .cont{ }
+.best_item ul{ display: flex; gap: 30px;}
+.best_item li { width: 20%; }
+.cont img{ width: 100%;}
+
+
+.tit_btns button{  padding: 11px 16px; background: #fff; border: 1px solid #202020; 
+border-radius: 100px; margin: 0 4px; color: #111; letter-spacing: -0.7px; font-size: 17px;
+line-height: 1.5;
+}
+.tit_btns button.active, .tit_btns button:hover{ background: #111; color: #fff;}
+
+.best_item .cont{ }
+.cont ul{ display: flex; gap: 30px;}
+.cont li { width: 25%; }
+.cont img{ width: 100%;}
+.cont strong{ display: block; font-weight: 400; 
+    padding: 20px 0 10px; width: 300px;  color: #111;
+    white-space: nowrap ; overflow: hidden; text-overflow: ellipsis;}
+
+.cont span {  font-size: 17px; font-weight: 500;}
+
+section.summer { margin: 150px  auto;}
+
+.summer .tit{  margin-bottom: 30px;}
+.summer .cont{  display: flex; gap: 20px; }
+.summer figure{ width: 590px;  }
+.summer ul{  
+flex: 1; display: grid; gap: 20px; align-items: flex-start;
+grid-template-columns: repeat( 3, 1fr) ;}
+.summer li { width: 100%; }
+.summer li img{ width: 100%; }
+.summer .cont strong{ width: 220px; }
+
+
+/* 비디오 */
+
+.video_container{ position: relative; height: 750px; }
+.video_container iframe{ position: absolute; top: 0; left: 0; 
+    width: 100%; height: 100%;}
+
+/* 배너 */
+
+.banner .inner {  padding: 0 0; }
+.banner img{ width: 100%; }
+.banner .tit_box{ margin-top: 45px; margin-bottom: 45px;  }
+
+.banner .tit_box span{ padding-top: 25px;}
+
+/* 버튼 */
+
+.more{ width: 160px; height: 52px; border: 1px solid black;
+margin: 24px auto 0; }
+.more a{ display: block; line-height: 52px; font-size: 14px; transition:.3s; } 
+.more a:after{ display: inline-block; content: ""; transition:.3s;
+width: 0; height: 0; 
+border-width: 5px  0 5px 8px;
+border-style: solid;
+border-color: transparent transparent transparent #111; 
+margin-left: 50px;
+}
+.more a:hover { background: #111; color: #fff; }
+.more a:hover:after{ border-left-color:#fff;}
+
+
+/* line_banner */
+.line_banner .inner{padding: 0 0; }
+.line_banner img{ width: 100%;}
+.line_first{ margin-bottom: 20px;} 
+
+
+
+/* INFLUENCER STYLE   \  -webkit-line-clamp: 2; line-clamp: 2; 첫번재거만 입력하면 노란 물결나오니 두번째것을 추가입력*/
+.inFluencer .cont{ display:flex; gap:30px;}
+.inFluencer .cont li{ width: 20%; }
+.inFluencer .id { margin: 22px 0 12px; font-weight: 600;  }
+.inFluencer .sub{ 
+font-size: 14px; color: #646464; 
+line-height: 1.4; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; 
+overflow: hidden;
+}
+
+.prd_box{ margin-top: 30px; padding: 15px 0; 
+    border-top: 1px solid #131212 ; 
+    border-bottom: 1px solid #131212 ;
+transition: 0.5s;
+}
+.prd_box figure{ display: inline-block; width: 54px;}
+.prd_box .prd_text{ color: #222;
+display: inline-block; width: calc(100% - 58px); padding-left: 10px;
+vertical-align: top;
+}
+.good_tit{ font-size: 13px; }
+.good_price{ font-size: 12px; font-weight: 600; margin-top: 20px;}
+
+.inFluencer li:hover .prd_box {    
+    border-top: 1px solid #eee ; 
+    border-bottom: 1px solid #eee ;}
+
+    /* instargram */
+
+.instargram .cont div{ display: flex;  gap: 5px;}
+.instargram a{flex: 1;  display: block; height: 330px; border: 1px solid #ccc }
+.instargram a img{  width: 100%; height: 100%; object-fit: cover;}
+
+
+/*header*/
+.top_menu_box{ height: 66px; }
+header{ height: 80px;}
+
+.top_menu_box .inner, header .inner{ 
+height: 100%;
+display: flex; justify-content: space-between; align-items: center; }
+.top_menu_box .inner{ align-items: flex-end;}
+
+
+.top_menu{ }
+.top_menu ul{ }
+.top_menu li{ display: inline-block; font-size: 14px; color: #111; margin: 24px;}
+.top_menu a{ }
+
+nav { }
+nav > ul { }
+nav > ul >li { display: inline-block; margin-right: 37px;}
+nav > ul >li > a{ font-size: 14px; font-weight: 700;  
+display: block; line-height: 75px; }
+
+nav > ul >li:nth-child(n+7) > a { font-weight: 300;}
+nav > ul >li > a:after{ width: 0%; height: 2px; background: #111;
+display: block; content: ""; transition: 0.3s;}
+nav > ul >li > a:hover:after { width: 100%;}
+
+
+.search {background: #e2dbdb; }
+.search_in{ width: 35px; height: 35px; padding: 0 15px; 
+display: flex; justify-content: space-between; align-items: center;}
+.search input { width: 250px; font-size: 16px; background: transparent; border: 0; outline: none;}
+.search img { width: 17px; height: 17px;  }
+
+
+
+/* visual*/
+#visual{ 
+height: calc(100vh - 146px); min-width: 1450px;}
+#visual img{ width: 100%; height: 100%; object-fit: cover; }
+
+
+/*section*/
+section{  margin: 120px auto 0;  }
+.tit_box{ text-align: center; margin-bottom: 45px;  }
+.tit_box .tit { }
+.tit_box span {  font-size: 22px; display: block; padding-bottom: 12px; color: #202020; letter-spacing: -0.7px;}
+.tit_box strong { color: #111;  letter-spacing: -0.7px; font-size: 36px; }
+
+.tit_btns button{  padding: 11px 16px; background: #fff; border: 1px solid #202020; 
+border-radius: 100px; margin: 0 4px; color: #111; letter-spacing: -0.7px; font-size: 17px;
+line-height: 1.5;
+}
+.tit_btns button.active, .tit_btns button:hover{ background: #111; color: #fff;}
+
+.best_item .cont{ }
+.cont ul{ display: flex; gap: 30px;}
+.cont li { width: 25%; }
+.cont img{ width: 100%;}
+.cont strong{ display: block; font-weight: 400; 
+    padding: 20px 0 10px; width: 300px;  color: #111;
+    white-space: nowrap ; overflow: hidden; text-overflow: ellipsis;}
+.cont span {  font-size: 17px; font-weight: 500;}
+
+.summer .tit{  margin-bottom: 30px;}
+.summer .cont{  display: flex; gap: 20px; }
+.summer figure{ width: 590px;  }
+.summer ul{  
+flex: 1; display: grid; gap: 20px; align-items: flex-start;
+grid-template-columns: repeat( 3, 1fr) ;}
+.summer li { width: 100%; }
+.summer li img{ width: 100%; }
+.summer .cont strong{ width: 220px; }
+
+
+/* 비디오 */
+
+.video_container{ position: relative; height: 750px; }
+.video_container iframe{ position: absolute; top: 0; left: 0; 
+    width: 100%; height: 100%;}
+
+/* 배너 */
+
+.banner .inner {  padding: 0 0; }
+.banner img{ width: 100%; }
+.banner .tit_box{ margin-top: 45px; margin-bottom: 45px;  }
+
+.banner .tit_box span{ padding-top: 25px;}
+
+/* 버튼 */
+
+.more{ width: 160px; height: 52px; border: 1px solid black;
+margin: 24px auto 0; }
+.more a{ display: block; line-height: 52px; font-size: 14px;}
+.more a:after{ display: inline-block; content: ""; 
+width: 0; height: 0; 
+border-width: 5px  0 4px 7px;
+border-style: solid;
+border-color: transparent transparent transparent #111; 
+margin-left: 40px;
+transition: 0.3s;
+}
+.more a:hover { background: #111; color: #fff; }
+.more a:hover:after{  border-left-color: #fff;}
+
+
+/* line_banner */
+.line_banner .inner{padding: 0 0; }
+.line_banner img{ width: 100%;}
+.line_first{ margin-bottom: 20px;} 
+
+/* INFLUENCER STYLE   \  -webkit-line-clamp: 2; line-clamp: 2; 첫번재거만 입력하면 노란 물결나오니 두번째것을 추가입력*/
+.inFluencer .cont{  }
+.inFluencer .cont li{ width: 20%; }
+.inFluencer .id { margin: 22px 0 12px; font-weight: 600;  }
+.inFluencer .sub{ 
+font-size: 14px; color: #646464; 
+line-height: 1.4; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; 
+overflow: hidden;
+}
+
+.prd_box{ margin-top: 30px; padding: 15px 0; 
+    border-top: 1px solid #eee ; 
+    border-bottom: 1px solid #eee ;
+transition: 0.5s;
+}
+.prd_box figure{ display: inline-block; width: 54px;}
+.prd_box .prd_text{ color: #222;
+display: inline-block; width: calc(100% - 58px); padding-left: 10px;
+vertical-align: top;
+}
+.good_tit{ font-size: 13px; }
+.good_price{ font-size: 12px; font-weight: 600; margin-top: 20px;}
+
+.inFluencer li:hover .prd_box {    
+    border-top: 1px solid #222 ; 
+    border-bottom: 1px solid #222;}
+
+    /* instargram */
+
+.instargram .cont div{ display: flex;  gap: 5px;}
+.instargram a{flex: 1;  display: block; height: 330px; border: 1px solid #ccc }
+.instargram a img{  width: 100%; height: 100%; object-fit: cover;}
+
+/* footer */
+footer{ background:#1f1f1f; color:#fff;  padding: 30px 0;}
+.footer_wrap{ display:flex; justify-content: space-between; align-items: flex-start;}
+.footer_left{flex: 1;  }
+.footer_menu{ display:flex; gap:40px; margin-bottom:45px; }
+.footer_menu li{ list-style: none;}
+
+
+
+
+
